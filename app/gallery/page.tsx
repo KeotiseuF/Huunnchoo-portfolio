@@ -1,11 +1,14 @@
 import Home from "./home";
 import Gallery from "./gallery";
+import { Suspense } from "react";
 
 export default function Page() {
   return (
     <main>
-      <Home />
-      <Gallery />
+      <Suspense>
+        <Home />
+        <Gallery />
+      </Suspense>
     </main>
   )
 }
