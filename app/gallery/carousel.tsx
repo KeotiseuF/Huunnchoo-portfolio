@@ -32,13 +32,13 @@ export default function Carousel({ items }: CarouselProps) {
 
   return (
     <>
-      <div className="relative w-full overflow-hidden">
+      <div className={`${selectedIndex !== null ? "hidden" : "block"} relative w-full overflow-hidden`}>
         <button
           onClick={scrollPrev}
           className="absolute left-2 sm:left-6 top-1/2 z-20 -translate-y-1/2 flex items-center justify-center"
           aria-label="Précédent"
         >
-          <Image src="/left_arrow.png" alt="Précédent" width={50} height={50} className="drop-shadow-lg" />
+          <Image src="/photos/left_arrow.png" alt="Précédent" width={50} height={50} className="drop-shadow-lg" />
         </button>
 
         <button
@@ -46,11 +46,11 @@ export default function Carousel({ items }: CarouselProps) {
           className="absolute right-2 sm:right-6 top-1/2 z-20 -translate-y-1/2 flex items-center justify-center"
           aria-label="Suivant"
         >
-          <Image src="/right_arrow.png" alt="Suivant" width={50} height={50} className="drop-shadow-lg" />
+          <Image src="/photos/right_arrow.png" alt="Suivant" width={50} height={50} className="drop-shadow-lg" />
         </button>
 
         <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-4 sm:gap-6 pb-6 px-4 sm:px-12 md:px-16 lg:px-20 touch-pan-x">
+          <div className="flex gap-4 sm:gap-6 pb-6 px-4 sm:px-12 md:px-16 lg:px-20 touch-pan-y">
             {items.map((item, index) => {
               const video = isVideo(item.src);
 
@@ -97,7 +97,7 @@ export default function Carousel({ items }: CarouselProps) {
                       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
                         <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
                           <Image
-                            src="/play-logo.png"
+                            src="/photos/play-logo.png"
                             alt="Play"
                             fill
                             className="object-contain drop-shadow-2xl"

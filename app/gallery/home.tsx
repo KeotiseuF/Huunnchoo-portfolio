@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <Carousel items={photos} />
       </div>
-      <div className={`${cssClass.parentContainer} mb-[60px]!`}>
+      <div className={`${cssClass.parentContainer} mb-[100px]!`}>
         <div className={cssClass.childContainer}>
           <p className={cssClass.title}>VIDÉOS</p>
           <Link className={cssClass.link} href={{ pathname: "/gallery", query: { value: 'videos' }}}>

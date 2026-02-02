@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${varelaRound.className} bg-[url(/drone_frame.jpg)] min-h-screen bg-cover bg-center bg-no-repeat backdrop-blur-md`}>
+      <body className={`${varelaRound.className} bg-[url(/photos/drone_frame.jpg)] min-h-screen bg-cover bg-center bg-no-repeat backdrop-blur-md`}>
         <Header />
         {children}
         <Footer />

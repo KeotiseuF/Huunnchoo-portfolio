@@ -35,7 +35,7 @@ export default function Footer() {
             className={cssClass.networkLink}
           >
             <Image
-              src="/instagram-logo.png"
+              src="/photos/instagram-logo.png"
               alt="Instagram"
               width={cssClass.sizeImg}
               height={cssClass.sizeImg}
@@ -49,7 +49,7 @@ export default function Footer() {
             className={cssClass.networkLink}
           >
             <Image
-              src="/tiktok-logo.png"
+              src="/photos/tiktok-logo.png"
               alt="TikTok"
               width={cssClass.sizeImg}
               height={cssClass.sizeImg}

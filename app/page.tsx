@@ -9,7 +9,7 @@ export default function Page() {
         </h1>
         <video
           className="absolute inset-0 h-full w-full object-cover"
-          src="/VAC_drone.mp4"
+          src="/videos/VAC_drone.mp4"
           autoPlay
           loop
           muted
