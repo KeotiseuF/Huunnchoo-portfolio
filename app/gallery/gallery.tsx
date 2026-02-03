@@ -73,9 +73,9 @@ export default function Gallery() {
             {/* Play icon */}
             {user_choice === "videos" && (
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+                <div className="relative w-20 h-20">
                   <Image
-                    src="/photos/play-logo.png"
+                    src="/photos/play-icon.svg"
                     alt="Play"
                     fill
                     className="object-contain drop-shadow-2xl"
